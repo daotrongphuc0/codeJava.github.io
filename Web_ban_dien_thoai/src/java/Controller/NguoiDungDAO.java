@@ -5,32 +5,14 @@
 package Controller;
 
 import Model.NguoiDung;
-import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.util.ArrayList;
 
 /**
  *
  * @author daotr
  */
-public class NguoiDungDAO {
-    private Connection conn = null;
-
-    public NguoiDungDAO() {
-        try {
-            String dbURL = "jdbc:sqlserver://DESKTOP-UB75S83\\DNBK3_SV0:1433;DatabaseName=WEB_DienThoai;encrypt=true;trustServerCertificate=true;";
-            String user = "sa";
-            String pass = "123456";
-            conn = DriverManager.getConnection(dbURL, user, pass);
-        }
-        catch (SQLException ex){
-            ex.printStackTrace();
-        }
-        
-    }
-
-    
+public class NguoiDungDAO  extends DBContext{ 
     public void addNguoiDung(NguoiDung nguoiDung) {
         String sql = "INSERT INTO tblNguoiDung(idNguoiDung,  tenND, taiKhoan, matKhau,  email) VALUES(?,?,?,?,?)";
         try {
@@ -45,6 +27,13 @@ public class NguoiDungDAO {
             e.printStackTrace();
         }
     }
-
+    public ArrayList<NguoiDung> getAll(){
+        ArrayList<NguoiDung> list = new ArrayList<>();
+        
+        String sql = "select * from dbo.NguoiDung";
+        
+        
+        return list;
+    }
     
 }

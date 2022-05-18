@@ -4,6 +4,8 @@
  */
 package Model;
 
+import java.util.Date;
+
 /**
  *
  * @author daotr
@@ -11,13 +13,13 @@ package Model;
 public class HangDT {
     private String idHang;
     private String hang;
-
+    private Date created_at;
     public HangDT() {
     }
-
-    public HangDT(String idHang, String hang) {
+    public HangDT(String idHang, String hang, Date created_at) {
         this.idHang = idHang;
         this.hang = hang;
+        this.created_at = created_at;
     }
 
     public String getIdHang() {
@@ -35,5 +37,9 @@ public class HangDT {
     public void setHang(String hang) {
         this.hang = hang;
     }
-    
+    public Date getCreated_at() {
+        return created_at;
+    }
+
+
 }

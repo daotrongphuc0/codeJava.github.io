@@ -14,13 +14,13 @@ public class BinhLuan {
     private NguoiDung nguoiDung;
     private SanPham sanPham;
     private String noiDung;
-    private Date thoiDiem;
+    private Date created_at;
 
-    public BinhLuan(NguoiDung nguoiDung, SanPham sanPham, String noiDung, Date thoiDiem) {
+    public BinhLuan(NguoiDung nguoiDung, SanPham sanPham, String noiDung, Date created_at) {
         this.nguoiDung = nguoiDung;
         this.sanPham = sanPham;
         this.noiDung = noiDung;
-        this.thoiDiem = thoiDiem;
+        this.created_at = created_at;
     }
 
     public NguoiDung getNguoiDung() {
@@ -35,8 +35,8 @@ public class BinhLuan {
         return noiDung;
     }
 
-    public Date getThoiDiem() {
-        return thoiDiem;
+    public Date getCreated_at() {
+        return created_at;
     }
 
     public void setNguoiDung(NguoiDung nguoiDung) {
@@ -51,9 +51,6 @@ public class BinhLuan {
         this.noiDung = noiDung;
     }
 
-    public void setThoiDiem(Date thoiDiem) {
-        this.thoiDiem = thoiDiem;
-    }
-    
+
     
 }

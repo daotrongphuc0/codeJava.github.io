@@ -5,32 +5,15 @@
 package Controller;
 
 import Model.NhanVien;
-import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+
 
 /**
  *
  * @author daotr
  */
-public class NhanVienDAO {
-    private Connection conn = null;
-
-    public NhanVienDAO() {
-        try {
-            String dbURL = "jdbc:sqlserver://DESKTOP-UB75S83\\DNBK3_SV0:1433;DatabaseName=WEB_DienThoai;encrypt=true;trustServerCertificate=true;";
-            String user = "sa";
-            String pass = "123456";
-            conn = DriverManager.getConnection(dbURL, user, pass);
-        }
-        catch (SQLException ex){
-            ex.printStackTrace();
-        }
-        
-    }
-
-    
+public class NhanVienDAO extends DBContext{
     public void addNhanVien(NhanVien nhanVien) {
         String sql = "INSERT INTO tblNhanVien(idNhanVien,  ten, taiKhoan, matKhau) VALUES(?,?,?,?)";
         try {
@@ -40,7 +23,7 @@ public class NhanVienDAO {
             ps.setString(3, nhanVien.getTaiKhoan());
             ps.setString(4, nhanVien.getMatKhau());
             ps.executeUpdate();
-        } catch (Exception e) {
+        } catch (SQLException e) {
             e.printStackTrace();
         }
     }

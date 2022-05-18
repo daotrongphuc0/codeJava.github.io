@@ -4,37 +4,56 @@
  */
 package Model;
 
+import java.util.Date;
+
 /**
  *
  * @author daotr
  */
 public class HinhAnh {
     private String idHinhAnh;
-    private String anh;
-
-    public HinhAnh(String idHinhAnh, String anh) {
-        this.idHinhAnh = idHinhAnh;
-        this.anh = anh;
-    }
+    private String slug;
+    private String alt;
+    private Date created_at;
 
     public HinhAnh() {
+    }
+
+    public HinhAnh(String idHinhAnh, String slug, String alt, Date created_at) {
+        this.idHinhAnh = idHinhAnh;
+        this.slug = slug;
+        this.alt = alt;
+        this.created_at = created_at;
     }
 
     public String getIdHinhAnh() {
         return idHinhAnh;
     }
 
-    public String getAnh() {
-        return anh;
-    }
-
     public void setIdHinhAnh(String idHinhAnh) {
         this.idHinhAnh = idHinhAnh;
     }
 
-    public void setAnh(String anh) {
-        this.anh = anh;
+    public String getSlug() {
+        return slug;
     }
+
+    public void setSlug(String slug) {
+        this.slug = slug;
+    }
+
+    public String getAlt() {
+        return alt;
+    }
+
+    public void setAlt(String alt) {
+        this.alt = alt;
+    }
+
+    public Date getCreated_at() {
+        return created_at;
+    }
+
     
-    
+
 }

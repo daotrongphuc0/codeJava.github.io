@@ -4,6 +4,7 @@
  */
 package Model;
 import java.util.ArrayList;
+import java.util.Date;
 /**
  *
  * @author daotr
@@ -21,8 +22,13 @@ public class SanPham {
     private String cameraSau;
     private int gia;
     private ArrayList<HinhAnh> hinhAnh;
+    private Date created_at;
+    private Date updated_at;
 
-    public SanPham(String idSanPham, String tenSP, HangDT hangDT, int pin, int ram, int rom, String cpu, String ktManHinh, String cameraTruoc, String cameraSau, int gia, ArrayList<HinhAnh> hinhAnh) {
+    public SanPham() {
+    }
+
+    public SanPham(String idSanPham, String tenSP, HangDT hangDT, int pin, int ram, int rom, String cpu, String ktManHinh, String cameraTruoc, String cameraSau, int gia, ArrayList<HinhAnh> hinhAnh, Date created_at, Date updated_at) {
         this.idSanPham = idSanPham;
         this.tenSP = tenSP;
         this.hangDT = hangDT;
@@ -35,7 +41,29 @@ public class SanPham {
         this.cameraSau = cameraSau;
         this.gia = gia;
         this.hinhAnh = hinhAnh;
+        this.created_at = created_at;
+        this.updated_at = updated_at;
     }
+
+
+    
+    public Date getCreated_at() {
+        return created_at;
+    }
+
+    public void setCreated_at(Date created_at) {
+        this.created_at = created_at;
+    }
+
+    public Date getUpdated_at() {
+        return updated_at;
+    }
+
+    public void setUpdated_at(Date updated_at) {
+        this.updated_at = updated_at;
+    }
+
+    
 
     public void setIdSanPham(String idSanPham) {
         this.idSanPham = idSanPham;
