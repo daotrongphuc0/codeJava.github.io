@@ -4,7 +4,8 @@
  */
 package Model;
 
-import java.util.Date;
+import java.sql.Date;
+
 
 /**
  *
@@ -16,6 +17,10 @@ public class BinhLuan {
     private String noiDung;
     private Date created_at;
 
+    public BinhLuan() {
+    }
+
+    
     public BinhLuan(NguoiDung nguoiDung, SanPham sanPham, String noiDung, Date created_at) {
         this.nguoiDung = nguoiDung;
         this.sanPham = sanPham;

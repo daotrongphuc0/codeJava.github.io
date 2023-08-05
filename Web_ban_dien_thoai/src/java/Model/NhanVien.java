@@ -4,7 +4,7 @@
  */
 package Model;
 
-import java.util.Date;
+import java.sql.Date;
 
 /**
  *
@@ -76,5 +76,11 @@ public class NhanVien {
     public void setUpdated_at(Date updated_at) {
         this.updated_at = updated_at;
     }
+
+    public void setCreated_at(Date created_at) {
+        this.created_at = created_at;
+    }
+    
+    
     
 }

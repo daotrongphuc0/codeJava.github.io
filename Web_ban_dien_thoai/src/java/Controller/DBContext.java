@@ -17,7 +17,7 @@ public class DBContext {
 
     public DBContext() {
         try {
-            String dbURL = "jdbc:sqlserver://DESKTOP-UB75S83\\DNBK3_SV0:1433;DatabaseName=WEB_DienThoai;encrypt=true;trustServerCertificate=true;";
+            String dbURL = "jdbc:sqlserver://DESKTOP-UB75S83\\DNBK3_SV0:1433;DatabaseName=Web_ban_dien_thoai;encrypt=true;trustServerCertificate=true;";
             String user = "sa";
             String pass = "123456";
             conn = DriverManager.getConnection(dbURL, user, pass);
