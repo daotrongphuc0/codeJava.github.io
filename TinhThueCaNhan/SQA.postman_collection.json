@@ -1,0 +1,2112 @@
+{
+	"info": {
+		"_postman_id": "17087bf3-0459-4da7-b010-e496cb1e8ebe",
+		"name": "SQA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22209121"
+	},
+	"item": [
+		{
+			"name": "Api",
+			"item": [
+				{
+					"name": "create account",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"dtp\",\r\n    \"diaChi\": \"Thai Binh\" ,\r\n    \"email\":\"dtp@gmail.com\",\r\n    \"sdt\":\"01233456\",\r\n    \"maSoThue\":\"000000001\",\r\n    \"username\":\"dtpClient111\",\r\n    \"password\":\"11\",\r\n    \"role\" : {\r\n        \"isAdmin\":\"1\",\r\n        \"xuatBaoCao\":\"1\",\r\n        \"xemDanhSach\":\"1\",\r\n        \"cauHinh\":\"1\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8081/nguoidung",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"nguoidung"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create account",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"dtp\",\r\n    \"diaChi\": \"Thai Binh\" ,\r\n    \"email\":\"dtp@gmail.com\",\r\n    \"sdt\":\"01233456\",\r\n    \"maSoThue\":\"000000001\",\r\n    \"username\":\"dtpClient\",\r\n    \"password\":\"1\",\r\n    \"role\" : {\r\n        \"isAdmin\":\"0\",\r\n        \"xuatBaoCao\":\"0\",\r\n        \"xemDanhSach\":\"0\",\r\n        \"cauHinh\":\"0\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8081/nguoidung",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8081",
+									"path": [
+										"nguoidung"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, PUT, OPTIONS, DELETE"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "3600"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With, Content-Type, Authorization, Origin, Accept, Access-Control-Request-Method, Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 19 Apr 2023 15:10:55 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"createdBy\": null,\n    \"createdDate\": 1681917055903,\n    \"modifiedBy\": null,\n    \"modifiedDate\": 1681917055903,\n    \"username\": \"dtpClient\",\n    \"password\": \"1\",\n    \"role\": {\n        \"id\": 2,\n        \"createdBy\": null,\n        \"createdDate\": 1681917055904,\n        \"modifiedBy\": null,\n        \"modifiedDate\": 1681917055904,\n        \"isAdmin\": 0,\n        \"xemDanhSach\": 0,\n        \"xuatBaoCao\": 0,\n        \"cauHinh\": 0\n    },\n    \"name\": \"dtp\",\n    \"diaChi\": \"Thai Binh\",\n    \"email\": \"dtp@gmail.com\",\n    \"sdt\": \"01233456\",\n    \"maSoThue\": \"000000001\"\n}"
+						},
+						{
+							"name": "create account",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"dtp\",\r\n    \"diaChi\": \"Thai Binh\" ,\r\n    \"email\":\"dtp@gmail.com\",\r\n    \"sdt\":\"01233456\",\r\n    \"maSoThue\":\"000000001\",\r\n    \"username\":\"dtp\",\r\n    \"password\":\"1\",\r\n    \"role\" : {\r\n        \"isAdmin\":\"1\",\r\n        \"xuatBaoCao\":\"1\",\r\n        \"xemDanhSach\":\"1\",\r\n        \"cauHinh\":\"1\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8081/nguoidung",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8081",
+									"path": [
+										"nguoidung"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, PUT, OPTIONS, DELETE"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "3600"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With, Content-Type, Authorization, Origin, Accept, Access-Control-Request-Method, Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 19 Apr 2023 15:10:55 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"createdBy\": null,\n    \"createdDate\": 1681917055903,\n    \"modifiedBy\": null,\n    \"modifiedDate\": 1681917055903,\n    \"username\": \"dtp\",\n    \"password\": \"1\",\n    \"role\": {\n        \"id\": 2,\n        \"createdBy\": null,\n        \"createdDate\": 1681917055904,\n        \"modifiedBy\": null,\n        \"modifiedDate\": 1681917055904,\n        \"isAdmin\": 1,\n        \"xemDanhSach\": 1,\n        \"xuatBaoCao\": 1,\n        \"cauHinh\": 1\n    },\n    \"name\": \"dtp\",\n    \"diaChi\": \"Thai Binh\",\n    \"email\": \"dtp@gmail.com\",\n    \"sdt\": \"01233456\",\n    \"maSoThue\": \"000000001\"\n}"
+						}
+					]
+				},
+				{
+					"name": "create role",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"isAdmin\":\"1\",\r\n    \"xuatBaoCao\":\"1\",\r\n    \"xemDanhSach\":\"1\",\r\n    \"cauHinh\":\"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8081/role",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"role"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create role",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\r\n    \"isAdmin\":\"1\",\r\n    \"xuatBaoCao\":\"1\",\r\n    \"xemDanhSach\":\"1\",\r\n    \"cauHinh\":\"1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8081/role",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8081",
+									"path": [
+										"role"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, PUT, OPTIONS, DELETE"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "3600"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With, Content-Type, Authorization, Origin, Accept, Access-Control-Request-Method, Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Apr 2023 09:13:09 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 8,\n    \"createdBy\": null,\n    \"createdDate\": 1681636389364,\n    \"modifiedBy\": null,\n    \"modifiedDate\": 1681636389364,\n    \"isAdmin\": 1,\n    \"xemDanhSach\": 1,\n    \"xuatBaoCao\": 1,\n    \"cauHinh\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "get  all nguoi dung co phan trang",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8081/nguoidung/?limit=2&page=1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"nguoidung",
+								""
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "2"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get  all nguoi dung co phan trang",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8081/nguoidung/?limit=2&page=1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8081",
+									"path": [
+										"nguoidung",
+										""
+									],
+									"query": [
+										{
+											"key": "limit",
+											"value": "2"
+										},
+										{
+											"key": "page",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, PUT, OPTIONS, DELETE"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "3600"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With, Content-Type, Authorization, Origin, Accept, Access-Control-Request-Method, Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Apr 2023 09:38:13 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"page\": 1,\n    \"totalPage\": 2,\n    \"listResult\": [\n        {\n            \"id\": 1,\n            \"createdBy\": null,\n            \"createdDate\": 1681637871000,\n            \"modifiedBy\": null,\n            \"modifiedDate\": 1681637871000,\n            \"username\": null,\n            \"password\": null,\n            \"role\": {\n                \"id\": 1,\n                \"createdBy\": null,\n                \"createdDate\": 1681637871000,\n                \"modifiedBy\": null,\n                \"modifiedDate\": 1681637871000,\n                \"isAdmin\": 1,\n                \"xemDanhSach\": 1,\n                \"xuatBaoCao\": 1,\n                \"cauHinh\": 1\n            },\n            \"name\": \"dtp\",\n            \"diaChi\": \"a\",\n            \"email\": \"2\",\n            \"sdt\": \"3\",\n            \"maSoThue\": \"4\"\n        },\n        {\n            \"id\": 2,\n            \"createdBy\": null,\n            \"createdDate\": 1681637877000,\n            \"modifiedBy\": null,\n            \"modifiedDate\": 1681637877000,\n            \"username\": null,\n            \"password\": null,\n            \"role\": {\n                \"id\": 2,\n                \"createdBy\": null,\n                \"createdDate\": 1681637877000,\n                \"modifiedBy\": null,\n                \"modifiedDate\": 1681637877000,\n                \"isAdmin\": 1,\n                \"xemDanhSach\": 1,\n                \"xuatBaoCao\": 1,\n                \"cauHinh\": 1\n            },\n            \"name\": \"dtp\",\n            \"diaChi\": \"a\",\n            \"email\": \"2\",\n            \"sdt\": \"3\",\n            \"maSoThue\": \"4\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "get all nguoi dung",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8081/nguoidung/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"nguoidung",
+								""
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get all nguoi dung",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8081/nguoidung/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8081",
+									"path": [
+										"nguoidung",
+										""
+									],
+									"query": [
+										{
+											"key": "limit",
+											"value": "2",
+											"disabled": true
+										},
+										{
+											"key": "page",
+											"value": "1",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, PUT, OPTIONS, DELETE"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "3600"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With, Content-Type, Authorization, Origin, Accept, Access-Control-Request-Method, Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Apr 2023 09:38:58 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"page\": 0,\n    \"totalPage\": 0,\n    \"listResult\": [\n        {\n            \"id\": 1,\n            \"createdBy\": null,\n            \"createdDate\": 1681637871000,\n            \"modifiedBy\": null,\n            \"modifiedDate\": 1681637871000,\n            \"username\": null,\n            \"password\": null,\n            \"role\": {\n                \"id\": 1,\n                \"createdBy\": null,\n                \"createdDate\": 1681637871000,\n                \"modifiedBy\": null,\n                \"modifiedDate\": 1681637871000,\n                \"isAdmin\": 1,\n                \"xemDanhSach\": 1,\n                \"xuatBaoCao\": 1,\n                \"cauHinh\": 1\n            },\n            \"name\": \"dtp\",\n            \"diaChi\": \"a\",\n            \"email\": \"2\",\n            \"sdt\": \"3\",\n            \"maSoThue\": \"4\"\n        },\n        {\n            \"id\": 2,\n            \"createdBy\": null,\n            \"createdDate\": 1681637877000,\n            \"modifiedBy\": null,\n            \"modifiedDate\": 1681637877000,\n            \"username\": null,\n            \"password\": null,\n            \"role\": {\n                \"id\": 2,\n                \"createdBy\": null,\n                \"createdDate\": 1681637877000,\n                \"modifiedBy\": null,\n                \"modifiedDate\": 1681637877000,\n                \"isAdmin\": 1,\n                \"xemDanhSach\": 1,\n                \"xuatBaoCao\": 1,\n                \"cauHinh\": 1\n            },\n            \"name\": \"dtp\",\n            \"diaChi\": \"a\",\n            \"email\": \"2\",\n            \"sdt\": \"3\",\n            \"maSoThue\": \"4\"\n        },\n        {\n            \"id\": 3,\n            \"createdBy\": null,\n            \"createdDate\": 1681637878000,\n            \"modifiedBy\": null,\n            \"modifiedDate\": 1681637878000,\n            \"username\": null,\n            \"password\": null,\n            \"role\": {\n                \"id\": 3,\n                \"createdBy\": null,\n                \"createdDate\": 1681637878000,\n                \"modifiedBy\": null,\n                \"modifiedDate\": 1681637878000,\n                \"isAdmin\": 1,\n                \"xemDanhSach\": 1,\n                \"xuatBaoCao\": 1,\n                \"cauHinh\": 1\n            },\n            \"name\": \"dtp\",\n            \"diaChi\": \"a\",\n            \"email\": \"2\",\n            \"sdt\": \"3\",\n            \"maSoThue\": \"4\"\n        },\n        {\n            \"id\": 4,\n            \"createdBy\": null,\n            \"createdDate\": 1681637878000,\n            \"modifiedBy\": null,\n            \"modifiedDate\": 1681637878000,\n            \"username\": null,\n            \"password\": null,\n            \"role\": {\n                \"id\": 4,\n                \"createdBy\": null,\n                \"createdDate\": 1681637878000,\n                \"modifiedBy\": null,\n                \"modifiedDate\": 1681637878000,\n                \"isAdmin\": 1,\n                \"xemDanhSach\": 1,\n                \"xuatBaoCao\": 1,\n                \"cauHinh\": 1\n            },\n            \"name\": \"dtp\",\n            \"diaChi\": \"a\",\n            \"email\": \"2\",\n            \"sdt\": \"3\",\n            \"maSoThue\": \"4\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "get nguoi dung theo id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8081/nguoidung/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"nguoidung",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get nguoi dung theo id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8081/nguoidung/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8081",
+									"path": [
+										"nguoidung",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, PUT, OPTIONS, DELETE"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "3600"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With, Content-Type, Authorization, Origin, Accept, Access-Control-Request-Method, Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Apr 2023 09:38:45 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"createdBy\": null,\n    \"createdDate\": 1681637871000,\n    \"modifiedBy\": null,\n    \"modifiedDate\": 1681637871000,\n    \"username\": null,\n    \"password\": null,\n    \"role\": {\n        \"id\": 1,\n        \"createdBy\": null,\n        \"createdDate\": 1681637871000,\n        \"modifiedBy\": null,\n        \"modifiedDate\": 1681637871000,\n        \"isAdmin\": 1,\n        \"xemDanhSach\": 1,\n        \"xuatBaoCao\": 1,\n        \"cauHinh\": 1\n    },\n    \"name\": \"dtp\",\n    \"diaChi\": \"a\",\n    \"email\": \"2\",\n    \"sdt\": \"3\",\n    \"maSoThue\": \"4\"\n}"
+						}
+					]
+				},
+				{
+					"name": "add cau hinh",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"giamTruGiaCanh\": 11000000,\r\n    \"giamTruNguoiPhuThuoc\": 4400000,\r\n    \"mucDongBHYT\": 0.015,\r\n    \"mucLuongToiDaBHYT\": 29800000,\r\n    \"mucDongBHXH\": 0.08,\r\n    \"mucLuongToiDaBHXH\": 29800000,\r\n    \"mucDongBHTN\": 0.01,\r\n    \"mucLuongToiDaBHTN\": 85172000,\r\n    \"vung1\":  4680000,\r\n    \"vung2\": 4160000,\r\n    \"vung3\": 3640000,\r\n    \"vung4\": 3250000,\r\n    \"nhoHonBang5\": 0.05,\r\n    \"tu5den10\": 0.1,\r\n    \"tu10den18\": 0.15,\r\n    \"tu18den32\": 0.20,\r\n    \"tu32den52\": 0.25,\r\n    \"tu52den80\": 0.30,\r\n    \"tren80\": 0.35,\r\n    \"status\": \"active\",\r\n    \"nguoiTao\": null,\r\n    \"thueDuocKhais\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8081/cauhinh/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"cauhinh",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "add cau hinh",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"giamTruGiaCanh\": 11000000,\r\n    \"giamTruNguoiPhuThuoc\": 4400000,\r\n    \"mucDongBHYT\": 0.015,\r\n    \"mucLuongToiDaBHYT\": 29800000,\r\n    \"mucDongBHXH\": 0.08,\r\n    \"mucLuongToiDaBHXH\": 29800000,\r\n    \"mucDongBHTN\": 0.01,\r\n    \"mucLuongToiDaBHTN\": 85172000,\r\n    \"vung1\":  4680000,\r\n    \"vung2\": 4160000,\r\n    \"vung3\": 3640000,\r\n    \"vung4\": 3250000,\r\n    \"nhoHonBang5\": 0.05,\r\n    \"tu5den10\": 0.1,\r\n    \"tu10den18\": 0.15,\r\n    \"tu18den32\": 0.20,\r\n    \"tu32den52\": 0.25,\r\n    \"tu52den80\": 0.30,\r\n    \"tren80\": 0.35,\r\n    \"status\": \"active\",\r\n    \"nguoiTao\": null,\r\n    \"thueDuocKhais\": null\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8081/cauhinh/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8081",
+									"path": [
+										"cauhinh",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, PUT, OPTIONS, DELETE"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "3600"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With, Content-Type, Authorization, Origin, Accept, Access-Control-Request-Method, Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 19 Apr 2023 15:21:29 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"createdBy\": null,\n    \"createdDate\": 1681917689902,\n    \"modifiedBy\": null,\n    \"modifiedDate\": 1681917689902,\n    \"giamTruGiaCanh\": 11000000,\n    \"giamTruNguoiPhuThuoc\": 4400000,\n    \"mucDongBHYT\": 0.015,\n    \"mucLuongToiDaBHYT\": 29800000,\n    \"mucDongBHXH\": 0.08,\n    \"mucLuongToiDaBHXH\": 29800000,\n    \"mucDongBHTN\": 0.01,\n    \"mucLuongToiDaBHTN\": 85172000,\n    \"vung1\": 4680000,\n    \"vung2\": 4160000,\n    \"vung3\": 3640000,\n    \"vung4\": 3250000,\n    \"nhoHonBang5\": 0.05,\n    \"tu5den10\": 0.1,\n    \"tu10den18\": 0.15,\n    \"tu18den32\": 0.2,\n    \"tu32den52\": 0.25,\n    \"tu52den80\": 0.3,\n    \"tren80\": 0.35,\n    \"status\": \"active\",\n    \"nguoiTao\": null,\n    \"thueDuocKhais\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "get cau hinh hien tai",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8081/cauhinh/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"cauhinh",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get cau hinh hien tai",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8081/cauhinh/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8081",
+									"path": [
+										"cauhinh",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, PUT, OPTIONS, DELETE"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "3600"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With, Content-Type, Authorization, Origin, Accept, Access-Control-Request-Method, Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Apr 2023 10:58:57 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 4,\n    \"createdBy\": null,\n    \"createdDate\": 1681642645000,\n    \"modifiedBy\": null,\n    \"modifiedDate\": 1681642645000,\n    \"giamTruGiaCanh\": 110,\n    \"giamTruNguoiPhuThuoc\": 1000,\n    \"mucDongBHYT\": 2,\n    \"mucLuongToiDaBHYT\": 1000,\n    \"mucDongBHXH\": 1,\n    \"mucLuongToiDaBHXH\": 0,\n    \"mucDongBHTN\": 0,\n    \"mucLuongToiDaBHTN\": 0,\n    \"vung1\": 0,\n    \"vung2\": 0,\n    \"vung3\": 0,\n    \"vung4\": 0,\n    \"nhoHonBang5\": 0,\n    \"tu5den10\": 0,\n    \"tu10den18\": 0,\n    \"tu18den32\": 0,\n    \"tu32den52\": 0,\n    \"tu52den80\": 0,\n    \"tren80\": 0,\n    \"status\": \"active\",\n    \"nguoiTao\": null,\n    \"thueDuocKhais\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "get cau hinh theo id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8081/cauhinh/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"cauhinh",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get cau hinh theo id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8081/cauhinh/2",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8081",
+									"path": [
+										"cauhinh",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, PUT, OPTIONS, DELETE"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "3600"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With, Content-Type, Authorization, Origin, Accept, Access-Control-Request-Method, Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Apr 2023 10:59:25 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"createdBy\": null,\n    \"createdDate\": 1681642518000,\n    \"modifiedBy\": null,\n    \"modifiedDate\": 1681642598000,\n    \"giamTruGiaCanh\": 0,\n    \"giamTruNguoiPhuThuoc\": 10,\n    \"mucDongBHYT\": 0,\n    \"mucLuongToiDaBHYT\": 0,\n    \"mucDongBHXH\": 0,\n    \"mucLuongToiDaBHXH\": 0,\n    \"mucDongBHTN\": 0,\n    \"mucLuongToiDaBHTN\": 0,\n    \"vung1\": 0,\n    \"vung2\": 0,\n    \"vung3\": 0,\n    \"vung4\": 0,\n    \"nhoHonBang5\": 0,\n    \"tu5den10\": 0,\n    \"tu10den18\": 0,\n    \"tu18den32\": 0,\n    \"tu32den52\": 0,\n    \"tu52den80\": 0,\n    \"tren80\": 0,\n    \"status\": \"inactive\",\n    \"nguoiTao\": null,\n    \"thueDuocKhais\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"dtp\",\r\n    \"password\":\"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8081/checklogin",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"checklogin"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\":\"dtp\",\r\n    \"password\":\"1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8081/checklogin",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8081",
+									"path": [
+										"checklogin"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, PUT, OPTIONS, DELETE"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "3600"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With, Content-Type, Authorization, Origin, Accept, Access-Control-Request-Method, Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Apr 2023 10:14:34 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"createdBy\": null,\n    \"createdDate\": 1681640062000,\n    \"modifiedBy\": null,\n    \"modifiedDate\": 1681640062000,\n    \"username\": \"dtp\",\n    \"password\": \"1\",\n    \"role\": {\n        \"id\": 1,\n        \"createdBy\": null,\n        \"createdDate\": 1681640062000,\n        \"modifiedBy\": null,\n        \"modifiedDate\": 1681640062000,\n        \"isAdmin\": 1,\n        \"xemDanhSach\": 1,\n        \"xuatBaoCao\": 1,\n        \"cauHinh\": 1\n    },\n    \"name\": \"dtp\",\n    \"diaChi\": null,\n    \"email\": null,\n    \"sdt\": null,\n    \"maSoThue\": null\n}"
+						},
+						{
+							"name": "login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\":\"dtp\",\r\n    \"password\":\"12\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8081/checklogin",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8081",
+									"path": [
+										"checklogin"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, PUT, OPTIONS, DELETE"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "3600"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With, Content-Type, Authorization, Origin, Accept, Access-Control-Request-Method, Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Apr 2023 10:15:52 GMT"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "lay ThueDuocKhai theo id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8081/thueduockhai/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"thueduockhai",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "lay ThueDuocKhai theo id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8081/thueduockhai/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8081",
+									"path": [
+										"thueduockhai",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, PUT, OPTIONS, DELETE"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "3600"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With, Content-Type, Authorization, Origin, Accept, Access-Control-Request-Method, Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Apr 2023 20:04:59 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"thue\": 17079900,\n    \"thueDuocKhaiDTO\": {\n        \"id\": 1,\n        \"createdBy\": null,\n        \"createdDate\": 1681988668000,\n        \"modifiedBy\": null,\n        \"modifiedDate\": 1681988668000,\n        \"nguoiDungId\": 1,\n        \"thuNhap\": 100000000,\n        \"mucLuongDongBH\": 100000000,\n        \"vung\": 1,\n        \"nguoiPhuThuoc\": 2,\n        \"trangThai\": \"0\",\n        \"thangKhai\": 1,\n        \"namKhai\": 2023,\n        \"cauHinhDTO\": {\n            \"id\": 1,\n            \"createdBy\": null,\n            \"createdDate\": 1681988665000,\n            \"modifiedBy\": null,\n            \"modifiedDate\": 1681988665000,\n            \"giamTruGiaCanh\": 11000000,\n            \"giamTruNguoiPhuThuoc\": 4400000,\n            \"mucDongBHYT\": 0.015,\n            \"mucLuongToiDaBHYT\": 29800000,\n            \"mucDongBHXH\": 0.08,\n            \"mucLuongToiDaBHXH\": 29800000,\n            \"mucDongBHTN\": 0.01,\n            \"mucLuongToiDaBHTN\": 85172000,\n            \"vung1\": 4680000,\n            \"vung2\": 4160000,\n            \"vung3\": 3640000,\n            \"vung4\": 3250000,\n            \"nhoHonBang5\": 0.05,\n            \"tu5den10\": 0.1,\n            \"tu10den18\": 0.15,\n            \"tu18den32\": 0.2,\n            \"tu32den52\": 0.25,\n            \"tu52den80\": 0.3,\n            \"tren80\": 0.35,\n            \"status\": \"active\",\n            \"nguoiTao\": null,\n            \"thueDuocKhais\": null\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "create thue duoc khai",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nguoiDungId\": \"1\",\r\n    \"cauHinhId\": \"1\",\r\n    \"thuNhap\": 100000000,\r\n    \"mucLuongDongBH\": 100000000,\r\n    \"vung\": 1,\r\n    \"nguoiPhuThuoc\": 2,\r\n    \"trangThai\": \"0\",\r\n    \"cmtc\": [],\r\n    \"thangKhai\": 1,\r\n    \"namKhai\": 2023\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8081/thueduockhai/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"thueduockhai",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create thue duoc khai",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nguoiDungId\": \"3\",\r\n    \"cauHinhId\":\"1\",\r\n    \"thuNhap\": 100000000,\r\n    \"mucLuongDongBH\": 100000000,\r\n    \"vung\": 1,\r\n    \"nguoiPhuThuoc\": 2,\r\n    \"trangThai\": \"0\",\r\n    \"cmtc\": [],\r\n    \"thangKhai\": 1,\r\n    \"namKhai\": 2023\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8081/thueduockhai/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8081",
+									"path": [
+										"thueduockhai",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, PUT, OPTIONS, DELETE"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "3600"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With, Content-Type, Authorization, Origin, Accept, Access-Control-Request-Method, Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 19 Apr 2023 15:23:03 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"createdBy\": null,\n    \"createdDate\": 1681917783634,\n    \"modifiedBy\": null,\n    \"modifiedDate\": 1681917783634,\n    \"nguoiDungId\": 3,\n    \"cauHinhId\": 1,\n    \"thuNhap\": 100000000,\n    \"mucLuongDongBH\": 100000000,\n    \"vung\": 1,\n    \"nguoiPhuThuoc\": 2,\n    \"trangThai\": \"0\",\n    \"thangKhai\": 1,\n    \"namKhai\": 2023\n}"
+						}
+					]
+				},
+				{
+					"name": "get ThueDuocKhai",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8081/thueduockhai/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"thueduockhai",
+								""
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "vung",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get ThueDuocKhai",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8081/thueduockhai/?vung=1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8081",
+									"path": [
+										"thueduockhai",
+										""
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "vung",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, PUT, OPTIONS, DELETE"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "3600"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With, Content-Type, Authorization, Origin, Accept, Access-Control-Request-Method, Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Apr 2023 19:54:20 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"tongThue\": 34159800,\n    \"list\": [\n        {\n            \"id\": 1,\n            \"createdBy\": null,\n            \"createdDate\": 1681988668000,\n            \"modifiedBy\": null,\n            \"modifiedDate\": 1681988668000,\n            \"nguoiDungId\": 1,\n            \"thuNhap\": 100000000,\n            \"mucLuongDongBH\": 100000000,\n            \"vung\": 1,\n            \"nguoiPhuThuoc\": 2,\n            \"trangThai\": \"0\",\n            \"thangKhai\": 1,\n            \"namKhai\": 2023,\n            \"cauHinhDTO\": {\n                \"id\": 1,\n                \"createdBy\": null,\n                \"createdDate\": 1681988665000,\n                \"modifiedBy\": null,\n                \"modifiedDate\": 1681988665000,\n                \"giamTruGiaCanh\": 11000000,\n                \"giamTruNguoiPhuThuoc\": 4400000,\n                \"mucDongBHYT\": 0.015,\n                \"mucLuongToiDaBHYT\": 29800000,\n                \"mucDongBHXH\": 0.08,\n                \"mucLuongToiDaBHXH\": 29800000,\n                \"mucDongBHTN\": 0.01,\n                \"mucLuongToiDaBHTN\": 85172000,\n                \"vung1\": 4680000,\n                \"vung2\": 4160000,\n                \"vung3\": 3640000,\n                \"vung4\": 3250000,\n                \"nhoHonBang5\": 0.05,\n                \"tu5den10\": 0.1,\n                \"tu10den18\": 0.15,\n                \"tu18den32\": 0.2,\n                \"tu32den52\": 0.25,\n                \"tu52den80\": 0.3,\n                \"tren80\": 0.35,\n                \"status\": \"active\",\n                \"nguoiTao\": null,\n                \"thueDuocKhais\": null\n            }\n        },\n        {\n            \"id\": 2,\n            \"createdBy\": null,\n            \"createdDate\": 1681989822000,\n            \"modifiedBy\": null,\n            \"modifiedDate\": 1681989822000,\n            \"nguoiDungId\": 1,\n            \"thuNhap\": 100000000,\n            \"mucLuongDongBH\": 100000000,\n            \"vung\": 1,\n            \"nguoiPhuThuoc\": 2,\n            \"trangThai\": \"0\",\n            \"thangKhai\": 1,\n            \"namKhai\": 2023,\n            \"cauHinhDTO\": {\n                \"id\": 1,\n                \"createdBy\": null,\n                \"createdDate\": 1681988665000,\n                \"modifiedBy\": null,\n                \"modifiedDate\": 1681988665000,\n                \"giamTruGiaCanh\": 11000000,\n                \"giamTruNguoiPhuThuoc\": 4400000,\n                \"mucDongBHYT\": 0.015,\n                \"mucLuongToiDaBHYT\": 29800000,\n                \"mucDongBHXH\": 0.08,\n                \"mucLuongToiDaBHXH\": 29800000,\n                \"mucDongBHTN\": 0.01,\n                \"mucLuongToiDaBHTN\": 85172000,\n                \"vung1\": 4680000,\n                \"vung2\": 4160000,\n                \"vung3\": 3640000,\n                \"vung4\": 3250000,\n                \"nhoHonBang5\": 0.05,\n                \"tu5den10\": 0.1,\n                \"tu10den18\": 0.15,\n                \"tu18den32\": 0.2,\n                \"tu32den52\": 0.25,\n                \"tu52den80\": 0.3,\n                \"tren80\": 0.35,\n                \"status\": \"active\",\n                \"nguoiTao\": null,\n                \"thueDuocKhais\": null\n            }\n        }\n    ]\n}"
+						},
+						{
+							"name": "get ThueDuocKhai",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8081/thueduockhai/?status=1&vung=1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8081",
+									"path": [
+										"thueduockhai",
+										""
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "1"
+										},
+										{
+											"key": "vung",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, PUT, OPTIONS, DELETE"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "3600"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With, Content-Type, Authorization, Origin, Accept, Access-Control-Request-Method, Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Apr 2023 19:54:33 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"tongThue\": 0,\n    \"list\": []\n}"
+						},
+						{
+							"name": "get ThueDuocKhai",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8081/thueduockhai/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8081",
+									"path": [
+										"thueduockhai",
+										""
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "vung",
+											"value": "1",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, PUT, OPTIONS, DELETE"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "3600"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With, Content-Type, Authorization, Origin, Accept, Access-Control-Request-Method, Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Apr 2023 19:54:43 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"tongThue\": 34159800,\n    \"list\": [\n        {\n            \"id\": 1,\n            \"createdBy\": null,\n            \"createdDate\": 1681988668000,\n            \"modifiedBy\": null,\n            \"modifiedDate\": 1681988668000,\n            \"nguoiDungId\": 1,\n            \"thuNhap\": 100000000,\n            \"mucLuongDongBH\": 100000000,\n            \"vung\": 1,\n            \"nguoiPhuThuoc\": 2,\n            \"trangThai\": \"0\",\n            \"thangKhai\": 1,\n            \"namKhai\": 2023,\n            \"cauHinhDTO\": {\n                \"id\": 1,\n                \"createdBy\": null,\n                \"createdDate\": 1681988665000,\n                \"modifiedBy\": null,\n                \"modifiedDate\": 1681988665000,\n                \"giamTruGiaCanh\": 11000000,\n                \"giamTruNguoiPhuThuoc\": 4400000,\n                \"mucDongBHYT\": 0.015,\n                \"mucLuongToiDaBHYT\": 29800000,\n                \"mucDongBHXH\": 0.08,\n                \"mucLuongToiDaBHXH\": 29800000,\n                \"mucDongBHTN\": 0.01,\n                \"mucLuongToiDaBHTN\": 85172000,\n                \"vung1\": 4680000,\n                \"vung2\": 4160000,\n                \"vung3\": 3640000,\n                \"vung4\": 3250000,\n                \"nhoHonBang5\": 0.05,\n                \"tu5den10\": 0.1,\n                \"tu10den18\": 0.15,\n                \"tu18den32\": 0.2,\n                \"tu32den52\": 0.25,\n                \"tu52den80\": 0.3,\n                \"tren80\": 0.35,\n                \"status\": \"active\",\n                \"nguoiTao\": null,\n                \"thueDuocKhais\": null\n            }\n        },\n        {\n            \"id\": 2,\n            \"createdBy\": null,\n            \"createdDate\": 1681989822000,\n            \"modifiedBy\": null,\n            \"modifiedDate\": 1681989822000,\n            \"nguoiDungId\": 1,\n            \"thuNhap\": 100000000,\n            \"mucLuongDongBH\": 100000000,\n            \"vung\": 1,\n            \"nguoiPhuThuoc\": 2,\n            \"trangThai\": \"0\",\n            \"thangKhai\": 1,\n            \"namKhai\": 2023,\n            \"cauHinhDTO\": {\n                \"id\": 1,\n                \"createdBy\": null,\n                \"createdDate\": 1681988665000,\n                \"modifiedBy\": null,\n                \"modifiedDate\": 1681988665000,\n                \"giamTruGiaCanh\": 11000000,\n                \"giamTruNguoiPhuThuoc\": 4400000,\n                \"mucDongBHYT\": 0.015,\n                \"mucLuongToiDaBHYT\": 29800000,\n                \"mucDongBHXH\": 0.08,\n                \"mucLuongToiDaBHXH\": 29800000,\n                \"mucDongBHTN\": 0.01,\n                \"mucLuongToiDaBHTN\": 85172000,\n                \"vung1\": 4680000,\n                \"vung2\": 4160000,\n                \"vung3\": 3640000,\n                \"vung4\": 3250000,\n                \"nhoHonBang5\": 0.05,\n                \"tu5den10\": 0.1,\n                \"tu10den18\": 0.15,\n                \"tu18den32\": 0.2,\n                \"tu32den52\": 0.25,\n                \"tu52den80\": 0.3,\n                \"tren80\": 0.35,\n                \"status\": \"active\",\n                \"nguoiTao\": null,\n                \"thueDuocKhais\": null\n            }\n        }\n    ]\n}"
+						},
+						{
+							"name": "get ThueDuocKhai",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8081/thueduockhai/?status=1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8081",
+									"path": [
+										"thueduockhai",
+										""
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "1"
+										},
+										{
+											"key": "vung",
+											"value": "1",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, PUT, OPTIONS, DELETE"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "3600"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With, Content-Type, Authorization, Origin, Accept, Access-Control-Request-Method, Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Apr 2023 19:54:53 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"tongThue\": 0,\n    \"list\": []\n}"
+						},
+						{
+							"name": "get ThueDuocKhai",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8081/thueduockhai/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8081",
+									"path": [
+										"thueduockhai",
+										""
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "vung",
+											"value": "1",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, PUT, OPTIONS, DELETE"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "3600"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With, Content-Type, Authorization, Origin, Accept, Access-Control-Request-Method, Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Apr 2023 19:58:18 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"tongThue\": 34159800,\n    \"list\": [\n        {\n            \"id\": 1,\n            \"createdBy\": null,\n            \"createdDate\": 1681988668000,\n            \"modifiedBy\": null,\n            \"modifiedDate\": 1681988668000,\n            \"nguoiDungId\": 1,\n            \"thuNhap\": 100000000,\n            \"mucLuongDongBH\": 100000000,\n            \"vung\": 1,\n            \"nguoiPhuThuoc\": 2,\n            \"trangThai\": \"0\",\n            \"thangKhai\": 1,\n            \"namKhai\": 2023,\n            \"cauHinhDTO\": {\n                \"id\": 1,\n                \"createdBy\": null,\n                \"createdDate\": 1681988665000,\n                \"modifiedBy\": null,\n                \"modifiedDate\": 1681988665000,\n                \"giamTruGiaCanh\": 11000000,\n                \"giamTruNguoiPhuThuoc\": 4400000,\n                \"mucDongBHYT\": 0.015,\n                \"mucLuongToiDaBHYT\": 29800000,\n                \"mucDongBHXH\": 0.08,\n                \"mucLuongToiDaBHXH\": 29800000,\n                \"mucDongBHTN\": 0.01,\n                \"mucLuongToiDaBHTN\": 85172000,\n                \"vung1\": 4680000,\n                \"vung2\": 4160000,\n                \"vung3\": 3640000,\n                \"vung4\": 3250000,\n                \"nhoHonBang5\": 0.05,\n                \"tu5den10\": 0.1,\n                \"tu10den18\": 0.15,\n                \"tu18den32\": 0.2,\n                \"tu32den52\": 0.25,\n                \"tu52den80\": 0.3,\n                \"tren80\": 0.35,\n                \"status\": \"active\",\n                \"nguoiTao\": null,\n                \"thueDuocKhais\": null\n            }\n        },\n        {\n            \"id\": 2,\n            \"createdBy\": null,\n            \"createdDate\": 1681989822000,\n            \"modifiedBy\": null,\n            \"modifiedDate\": 1681989822000,\n            \"nguoiDungId\": 1,\n            \"thuNhap\": 100000000,\n            \"mucLuongDongBH\": 100000000,\n            \"vung\": 1,\n            \"nguoiPhuThuoc\": 2,\n            \"trangThai\": \"0\",\n            \"thangKhai\": 1,\n            \"namKhai\": 2023,\n            \"cauHinhDTO\": {\n                \"id\": 1,\n                \"createdBy\": null,\n                \"createdDate\": 1681988665000,\n                \"modifiedBy\": null,\n                \"modifiedDate\": 1681988665000,\n                \"giamTruGiaCanh\": 11000000,\n                \"giamTruNguoiPhuThuoc\": 4400000,\n                \"mucDongBHYT\": 0.015,\n                \"mucLuongToiDaBHYT\": 29800000,\n                \"mucDongBHXH\": 0.08,\n                \"mucLuongToiDaBHXH\": 29800000,\n                \"mucDongBHTN\": 0.01,\n                \"mucLuongToiDaBHTN\": 85172000,\n                \"vung1\": 4680000,\n                \"vung2\": 4160000,\n                \"vung3\": 3640000,\n                \"vung4\": 3250000,\n                \"nhoHonBang5\": 0.05,\n                \"tu5den10\": 0.1,\n                \"tu10den18\": 0.15,\n                \"tu18den32\": 0.2,\n                \"tu32den52\": 0.25,\n                \"tu52den80\": 0.3,\n                \"tren80\": 0.35,\n                \"status\": \"active\",\n                \"nguoiTao\": null,\n                \"thueDuocKhais\": null\n            }\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "create chung minh tai chinh theo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"hinhAnh\": \"url/assss\",\r\n    \"thueDuocKhaiId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8081/chungMinhTaiChinh/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"chungMinhTaiChinh",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get chung minh tai chinh",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"hinhAnh\": \"url/assss\",\r\n    \"thueDuocKhaiId\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8081/chungMinhTaiChinh/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8081",
+									"path": [
+										"chungMinhTaiChinh",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, PUT, OPTIONS, DELETE"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "3600"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With, Content-Type, Authorization, Origin, Accept, Access-Control-Request-Method, Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Apr 2023 14:31:22 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"createdBy\": null,\n    \"createdDate\": 1681655482068,\n    \"modifiedBy\": null,\n    \"modifiedDate\": 1681655482068,\n    \"hinhAnh\": \"url/assss\",\n    \"thueDuocKhaiId\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "get cmtc theo id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8081/chungMinhTaiChinh/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"chungMinhTaiChinh",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get cmtc theo id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8081/chungMinhTaiChinh/2",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8081",
+									"path": [
+										"chungMinhTaiChinh",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, PUT, OPTIONS, DELETE"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "3600"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With, Content-Type, Authorization, Origin, Accept, Access-Control-Request-Method, Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Apr 2023 14:33:21 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"createdBy\": null,\n    \"createdDate\": 1681655482000,\n    \"modifiedBy\": null,\n    \"modifiedDate\": 1681655482000,\n    \"hinhAnh\": \"url/assss\",\n    \"thueDuocKhaiId\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "get cmtc theo thueDuocKhaiId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8081/cmtcByThueDuocKhai/?idTDK=1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"cmtcByThueDuocKhai",
+								""
+							],
+							"query": [
+								{
+									"key": "idTDK",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get cmtc theo thueDuocKhaiId",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8081/cmtcByThueDuocKhai/?idTDK=1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8081",
+									"path": [
+										"cmtcByThueDuocKhai",
+										""
+									],
+									"query": [
+										{
+											"key": "idTDK",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, PUT, OPTIONS, DELETE"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "3600"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With, Content-Type, Authorization, Origin, Accept, Access-Control-Request-Method, Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Apr 2023 14:48:00 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"createdBy\": null,\n        \"createdDate\": 1681656316000,\n        \"modifiedBy\": null,\n        \"modifiedDate\": 1681656316000,\n        \"hinhAnh\": \"url/assss\",\n        \"thueDuocKhaiId\": 1\n    },\n    {\n        \"id\": 2,\n        \"createdBy\": null,\n        \"createdDate\": 1681656318000,\n        \"modifiedBy\": null,\n        \"modifiedDate\": 1681656318000,\n        \"hinhAnh\": \"url/assss\",\n        \"thueDuocKhaiId\": 1\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "create hoadon",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"thueDuocKhaiId\": \"1\",\r\n    \"tongTien\": 1000.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8081/hoadon",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"hoadon"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create hoadon",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"thueDuocKhaiId\": \"1\",\r\n    \"tongTien\": 1000.0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8081/hoadon",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8081",
+									"path": [
+										"hoadon"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, PUT, OPTIONS, DELETE"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "3600"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With, Content-Type, Authorization, Origin, Accept, Access-Control-Request-Method, Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Apr 2023 14:49:00 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"createdBy\": null,\n    \"createdDate\": 1681656540759,\n    \"modifiedBy\": null,\n    \"modifiedDate\": 1681656540759,\n    \"thueDuocKhaiId\": 1,\n    \"tongTien\": 1000\n}"
+						}
+					]
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8081/hoadon/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"hoadon",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8081/hoadon/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8081",
+									"path": [
+										"hoadon",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, PUT, OPTIONS, DELETE"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "3600"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With, Content-Type, Authorization, Origin, Accept, Access-Control-Request-Method, Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Apr 2023 14:49:46 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"createdBy\": null,\n    \"createdDate\": 1681656522000,\n    \"modifiedBy\": null,\n    \"modifiedDate\": 1681656522000,\n    \"thueDuocKhaiId\": null,\n    \"tongTien\": 1000\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

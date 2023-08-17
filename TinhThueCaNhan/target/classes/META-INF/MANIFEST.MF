@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: TinhThueCaNhan
+Implementation-Version: 1.0
+Built-By: daotr
+Implementation-Vendor-Id: com.thuecanhan
+Build-Jdk: 1.8.0_202
+Implementation-URL: http://projects.spring.io/spring-boot/TinhThueCaNh
+ an/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
